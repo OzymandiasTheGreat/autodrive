@@ -1,0 +1,59 @@
+{
+  "name": "autodrive",
+  "version": "0.1.0",
+  "description": "Autodrive is a secure, real-time, multi-writer, distributed file system",
+  "author": "Tomas Ravinskas <tomas@tomasrav.me> (https://tomasrav.me/)",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/OzymandiasTheGreat/autodrive#readme",
+  "repository": "https://github.com/OzymandiasTheGreat/autodrive",
+  "main": "build/index.js",
+  "types": "build/",
+  "files": [
+    "build/**/*.js",
+    "build/**/*.d.ts",
+    "src/**/*.ts",
+    "types/**/*.d.ts",
+    "NOTICE"
+  ],
+  "keywords": [
+    "P2P",
+    "hyperdrive",
+    "autobase"
+  ],
+  "scripts": {
+    "clean": "rm -rf build/ node_modules/ yarn.lock",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "brittle test/index.js"
+  },
+  "dependencies": {
+    "autobase": "^6.4.3",
+    "b4a": "^1.6.6",
+    "compact-encoding": "^2.15.0",
+    "hyperbee": "^2.20.0",
+    "hyperblobs": "^2.4.0",
+    "hypercore": "^10.37.16",
+    "hypercore-crypto": "^3.4.2",
+    "hypercore-errors": "^1.2.0",
+    "mirror-drive": "^1.3.1",
+    "protomux-rpc": "^1.6.0",
+    "ready-resource": "^1.1.1",
+    "safety-catch": "^1.0.2",
+    "streamx": "^2.18.0",
+    "sub-encoder": "^2.1.3",
+    "tiny-buffer-map": "^1.1.1",
+    "unix-path-resolve": "^1.0.2",
+    "z32": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/b4a": "^1.6.4",
+    "@types/node": "^20.14.12",
+    "autobase-test-helpers": "^2.1.1",
+    "bare-events": "^2.4.2",
+    "brittle": "^3.6.1",
+    "corestore": "^6.18.3",
+    "random-access-memory": "^6.2.1",
+    "test-tmp": "^1.2.1",
+    "typescript": "^5.5.4"
+  }
+}
